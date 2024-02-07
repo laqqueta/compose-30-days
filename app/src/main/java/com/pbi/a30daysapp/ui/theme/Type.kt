@@ -5,30 +5,38 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.pbi.a30daysapp.R
 
-val poppinsFamily = FontFamily(
-    Font(R.font.poppins),
-    Font(R.font.poppins_medium, FontWeight.Medium),
-    Font(R.font.poppins_bold, FontWeight.Bold)
+
+private val Sarabun = FontFamily(
+    Font(R.font.sarabun_regular, FontWeight.Normal),
+    Font(R.font.sarabun_medium, FontWeight.Medium),
+    Font(R.font.sarabun_bold, FontWeight.Bold)
 )
 
 // Set of Material typography styles to start with
 val Typography = Typography(
     titleMedium = TextStyle(
-        fontFamily = poppinsFamily,
+        fontFamily = Sarabun,
         fontWeight = FontWeight.Medium,
-        fontSize = 24.sp
-    ),
-    bodyMedium = TextStyle(
-        fontFamily = poppinsFamily,
-        fontWeight = FontWeight.Normal,
         fontSize = 16.sp
     ),
     headlineMedium = TextStyle(
-        fontFamily = poppinsFamily,
+        fontFamily = Sarabun,
         fontWeight = FontWeight.Bold,
-        fontSize = 28.sp
+        fontSize = 20.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = Sarabun,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+        textAlign = TextAlign.Justify
+    ),
+    labelMedium = TextStyle(
+        fontFamily = Sarabun,
+        fontWeight = FontWeight.Bold,
+        fontSize = 11.sp
     )
 )
